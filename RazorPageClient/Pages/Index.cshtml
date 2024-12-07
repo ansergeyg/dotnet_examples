@@ -1,0 +1,31 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Dashboard</h1>
+    <form method="post">
+        <label asp-for="Worker.FirstName"></label>
+        <input asp-for="Worker.FirstName" class="form-control" />
+
+        <label asp-for="Worker.LastName"></label>
+        <input asp-for="Worker.LastName" class="form-control" />
+
+        <label asp-for="Worker.Age"></label>
+        <input asp-for="Worker.Age" type="number" class="form-control" />
+
+        <label asp-for="Worker.Status"></label>
+        <select asp-for="Worker.Status" class="form-select">
+            <option value="Complete">Complete</option>
+            <option value="Incomplete">Incomplete</option>
+        </select>
+
+        <label asp-for="Worker.BirthDate"></label>
+        <input asp-for="Worker.BirthDate" type="date" class="form-control" />
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary">Export PDF</button>
+    </form>
+</div>
