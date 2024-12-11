@@ -4,7 +4,7 @@
 
 1) QuestPDF library [x]
 
-2) Native generation use Chromium and components
+2) Native generation use Chromium and components using (you can set it up as a dedicated docker container to isolate the chromium server)
 
 ### Excel generation
 
